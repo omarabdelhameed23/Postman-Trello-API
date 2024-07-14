@@ -20,7 +20,7 @@
 							"var jsonData = pm.response.json();\r",
 							"pm.environment.set(\"board_id\", jsonData.id);\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Board name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstboard\");\r",
 							"});"
@@ -137,7 +137,7 @@
 							"var jsonData = pm.response.json();\r",
 							"pm.environment.set(\"list_id\", jsonData.id);\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"List name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstlist\");\r",
 							"});"
@@ -167,23 +167,19 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "myfirstlist",
-							"type": "text"
+							"value": "myfirstlist"
 						},
 						{
 							"key": "idBoard",
-							"value": "{{board_id}}",
-							"type": "text"
+							"value": "{{board_id}}"
 						},
 						{
 							"key": "key",
-							"value": "{{key}}",
-							"type": "text"
+							"value": "{{key}}"
 						},
 						{
 							"key": "token",
-							"value": "{{token}}",
-							"type": "text"
+							"value": "{{token}}"
 						}
 					]
 				}
@@ -258,7 +254,7 @@
 							"var jsonData = pm.response.json();\r",
 							"pm.environment.set(\"card_id\", jsonData.id);\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Card name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstcard\");\r",
 							"});"
@@ -288,23 +284,19 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "myfirstcard",
-							"type": "text"
+							"value": "myfirstcard"
 						},
 						{
 							"key": "idList",
-							"value": "{{list_id}}",
-							"type": "text"
+							"value": "{{list_id}}"
 						},
 						{
 							"key": "key",
-							"value": "{{key}}",
-							"type": "text"
+							"value": "{{key}}"
 						},
 						{
 							"key": "token",
-							"value": "{{token}}",
-							"type": "text"
+							"value": "{{token}}"
 						}
 					]
 				}
@@ -381,7 +373,7 @@
 							"var jsonData = pm.response.json();\r",
 							"pm.environment.set(\"checklist_id\", jsonData.id);\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Checklist name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstchecklist\");\r",
 							"});"
@@ -411,23 +403,19 @@
 					"query": [
 						{
 							"key": "idCard",
-							"value": "{{card_id}}",
-							"type": "text"
+							"value": "{{card_id}}"
 						},
 						{
 							"key": "name",
-							"value": "myfirstchecklist",
-							"type": "text"
+							"value": "myfirstchecklist"
 						},
 						{
 							"key": "key",
-							"value": "{{key}}",
-							"type": "text"
+							"value": "{{key}}"
 						},
 						{
 							"key": "token",
-							"value": "{{token}}",
-							"type": "text"
+							"value": "{{token}}"
 						}
 					]
 				}
