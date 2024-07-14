@@ -81,7 +81,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Board name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstboard\");\r",
 							"});"
@@ -198,7 +198,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"List name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstlist\");\r",
 							"});"
@@ -315,7 +315,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Card name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstcard\");\r",
 							"});"
@@ -345,13 +345,11 @@
 					"query": [
 						{
 							"key": "key",
-							"value": "{{key}}",
-							"type": "text"
+							"value": "{{key}}"
 						},
 						{
 							"key": "token",
-							"value": "{{token}}",
-							"type": "text"
+							"value": "{{token}}"
 						}
 					]
 				}
@@ -434,7 +432,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Checklist name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstchecklist\");\r",
 							"});"
@@ -464,13 +462,11 @@
 					"query": [
 						{
 							"key": "key",
-							"value": "{{key}}",
-							"type": "text"
+							"value": "{{key}}"
 						},
 						{
 							"key": "token",
-							"value": "{{token}}",
-							"type": "text"
+							"value": "{{token}}"
 						}
 					]
 				}
@@ -548,7 +544,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Checkitem name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"myfirstcheckitem\");\r",
 							"});"
@@ -580,13 +576,11 @@
 					"query": [
 						{
 							"key": "key",
-							"value": "{{key}}",
-							"type": "text"
+							"value": "{{key}}"
 						},
 						{
 							"key": "token",
-							"value": "{{token}}",
-							"type": "text"
+							"value": "{{token}}"
 						}
 					]
 				}
